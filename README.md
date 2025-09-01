@@ -1,15 +1,31 @@
-ok  Welcome to your new dbt project!
+# Sales Data Transformation with BigQuery & dbt Cloud
 
-### Using the starter project
+## Project Overview
 
-Try running the following commands:
-- dbt run
-- dbt test
+This project demonstrates end-to-end data transformation and modeling using BigQuery and dbt Cloud on sales data, including customers, orders, and products tables. The goal is to create clean, structured, and analytics-ready datasets while demonstrating dbt features such as models, macros, and snapshots.
+
+## Features / Highlights
+
+Data Modeling: Built dbt models to join customers, orders, and products tables and derive enriched columns (e.g., concatenated customer names).
 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](https://getdbt.com/community) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+Date Transformations: Implemented macros to extract and split order dates into year, quarter, month, and week for analytical reporting.
+
+
+Snapshots: Tracked historical changes in customer addresses using dbt snapshots, ensuring a reliable versioned record of evolving data.
+
+
+# Tools & Technologies
+
+BigQuery: Data storage and query engine.
+
+
+dbt Cloud: Transformation, modeling, and snapshot management.
+
+
+SQL: For modeling,
+
+
+# Outcome
+
+The project produces structured, analytics-ready datasets suitable for dashboards, reporting, or further data science workflows, demonstrating practical use of dbt transformations and historical tracking in a cloud data warehouse.
