@@ -14,6 +14,8 @@ Date Transformations: Implemented macros to extract and split order dates into y
 
 Snapshots: Tracked historical changes in customer addresses using dbt snapshots, ensuring a reliable versioned record of evolving data.
 
+Built a custom data quality test to validate daily order counts, ensuring reliable and consistent reporting.
+
 
 # Tools & Technologies
 
