@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: first_dataset
+    database: dbt-bigquery-project-470805
+    schema: first_dataset
+    tables:
+      - name: Customer
+      - name: Orders
+      - name: Product
