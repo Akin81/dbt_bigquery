@@ -1,3 +1,6 @@
+
+-- Use the `ref` function to select from other models-
+
 SELECT
     o.Order_ID,
     c.Customer_ID,
@@ -7,10 +10,8 @@ SELECT
     o.Quantity,
     o.Order_Date
 FROM
-    {{ source("first_dataset", "Orders") }} o
+    first_dataset.Orders o
 JOIN
-    {{ ref("stg_customers") }} c 
-        ON o.Customer_ID = c.Customer_ID
+    {{ ref("stg_customers") }} c ON o.Customer_ID = c.Customer_ID
 JOIN
-    {{ source("first_dataset", "Products") }} p 
-        ON o.Product_ID = p.Product_ID
+    first_dataset.Products p ON o.Product_ID = p.Product_ID
